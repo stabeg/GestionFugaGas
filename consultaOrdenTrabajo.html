@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Gestión de Fugas de Gas</title>
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this page -->
+  <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+      <!-- Main Content -->
+      <div id="content">
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+          <!-- Topbar Search -->
+          <div class="rounded mx-auto d-block">
+              <img src="./img/logo3.png" alt="" style="height: 91px;">
+          </div>
+          <!-- Topbar Navbar -->
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <h1 class="h3 mb-2 text-gray-800">Consulta Orden de Trabajo</h1>          
+          <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <!-- <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6> -->
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" >
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>TICKET</th>
+                      <th>#REP</th>                      
+                      <th>CUADRILLA</th>
+                      <th>ESTATUS</th>
+                      <th>MAPA</th>
+                      
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th>ID</th>
+                      <th>TICKET</th>
+                      <th>#REP</th>                      
+                      <th>CUADRILLA</th>
+                      <th>ESTATUS</th>
+                      <th>MAPA</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>435fT6Ybs</td>
+                      <td>100</td>                      
+                      <td>201</td>
+                      <td><span class="badge badge-success">Atendido</span></td>
+                      <td>
+                          <a href="#" class="btn btn-primary btn-circle">
+                            <i class="fas fa-map-marker-alt"></i>
+                          </a>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>1325648</td>
+                      <td>101</td>                      
+                      <td>202</td>
+                      <td><span class="badge badge-success">Atendido</span></td>
+                      <td>
+                        <a href="#" class="btn btn-primary btn-circle">
+                          <i class="fas fa-map-marker-alt"></i>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>5521441</td>
+                      <td>102</td>                      
+                      <td>203</td>
+                      <td><span class="badge badge-warning">En proceso</span></td>
+                      <td>
+                          <a href="#" class="btn btn-primary btn-circle text-center">
+                            <i class="fas fa-map-marker-alt"></i>
+                          </a>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>36988852</td>
+                      <td>103</td>                      
+                      <td>204</td>
+                      <td><span class="badge badge-warning">En proceso</span></td>
+                      <td>
+                        <a href="#" class="btn btn-primary btn-circle">
+                          <i class="fas fa-map-marker-alt"></i>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>021554475</td>
+                      <td>104</td>                      
+                      <td>205</td>
+                      <td><span class="badge badge-success">Atendido</span></td>
+                      <td>
+                          <a href="#" class="btn btn-primary btn-circle">
+                            <i class="fas fa-map-marker-alt"></i>
+                          </a>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>02856932</td>
+                      <td>105</td>                      
+                      <td>206</td>
+                      <td><span class="badge badge-success">Atendido</span></td>
+                      <td>
+                          <a href="#" class="btn btn-primary btn-circle">
+                            <i class="fas fa-map-marker-alt"></i>
+                          </a>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>2265314114</td>
+                      <td>106</td>                      
+                      <td>207</td>
+                      <td><span class="badge badge-warning">En proceso</span></td>
+                      <td>
+                          <a href="#" class="btn btn-primary btn-circle">
+                            <i class="fas fa-map-marker-alt"></i>
+                          </a>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>774115478</td>
+                      <td>107</td>                      
+                      <td>208</td>
+                      <td><span class="badge badge-warning">En proceso</span></td>
+                      <td>
+                          <a href="#" class="btn btn-primary btn-circle">
+                            <i class="fas fa-map-marker-alt"></i>
+                          </a>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>84755214</td>
+                      <td>108</td>                      
+                      <td>209</td>
+                      <td><span class="badge badge-success">Atendido</span></td>
+                      <td>
+                          <a href="#" class="btn btn-primary btn-circle">
+                            <i class="fas fa-map-marker-alt"></i>
+                          </a>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td>125478525</td>
+                      <td>109</td>                      
+                      <td>210</td>
+                      <td><span class="badge badge-danger">No Atendido</span></td>
+                      <td>
+                          <a href="#" class="btn btn-primary btn-circle">
+                            <i class="fas fa-map-marker-alt"></i>
+                          </a>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>11</td>
+                      <td>85471256r</td>
+                      <td>110</td>                     
+                      <td>211</td>
+                      <td><span class="badge badge-danger">No Atendido</span></td>
+                      <td>
+                          <a href="#" class="btn btn-primary btn-circle">
+                            <i class="fas fa-map-marker-alt"></i>
+                          </a>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>12</td>
+                      <td>20147852</td>
+                      <td>111</td>                      
+                      <td>212</td>
+                      <td><span class="badge badge-danger">No Atendido</span></td>
+                      <td>
+                          <a href="#" class="btn btn-primary btn-circle">
+                            <i class="fas fa-map-marker-alt"></i>
+                          </a>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>13</td>
+                      <td>65848221</td>
+                      <td>112</td>                     
+                      <td>213</td>
+                      <td><span class="badge badge-success"> Atendido</span></td>
+                      <td>
+                          <a href="#" class="btn btn-primary btn-circle">
+                            <i class="fas fa-map-marker-alt"></i>
+                          </a>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>14</td>
+                      <td>201045fDGDSgdG</td>
+                      <td>113</td>                      
+                      <td>214</td>
+                      <td><span class="badge badge-danger">No Atendido</span></td>
+                      <td>
+                          <a href="#" class="btn btn-primary btn-circle">
+                            <i class="fas fa-map-marker-alt"></i>
+                          </a>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>15</td>
+                      <td>32114565</td>
+                      <td>114</td>                      
+                      <td>2015</td>
+                      <td><span class="badge badge-warning">En proceso</span></td>
+                      <td>
+                          <a href="#" class="btn btn-primary btn-circle">
+                            <i class="fas fa-map-marker-alt"></i>
+                          </a>
+                        </td>
+                    </tr>                    
+                    <tr>
+                      <td>16</td>
+                      <td>2548501</td>
+                      <td>115</td>                      
+                      <td>216</td>
+                      <td><span class="badge badge-success">Atendido</span></td>
+                      <td>
+                          <a href="#" class="btn btn-primary btn-circle">
+                            <i class="fas fa-map-marker-alt"></i>
+                          </a>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>17</td>
+                      <td>21564852</td>
+                      <td>116</td>                      
+                      <td>217</td>
+                      <td><span class="badge badge-danger">No Atendido</span></td>
+                      <td>
+                          <a href="#" class="btn btn-primary btn-circle">
+                            <i class="fas fa-map-marker-alt"></i>
+                          </a>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>18</td>
+                      <td>201478547</td>
+                      <td>117</td>                      
+                      <td>218</td>
+                      <td><span class="badge badge-danger">No Atendido</span></td>
+                      <td>
+                          <a href="#" class="btn btn-primary btn-circle">
+                            <i class="fas fa-map-marker-alt"></i>
+                          </a>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>19</td>
+                      <td>320145520</td>
+                      <td>118</td>                      
+                      <td>219</td>
+                      <td><span class="badge badge-success">Atendido</span></td>
+                      <td>
+                          <a href="#" class="btn btn-primary btn-circle">
+                            <i class="fas fa-map-marker-alt"></i>
+                          </a>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>20</td>
+                      <td>878544125</td>
+                      <td>119</td>                     
+                      <td>220</td>
+                      <td><span class="badge badge-warning">En proceso</span></td>
+                      <td>
+                          <a href="#" class="btn btn-primary btn-circle">
+                            <i class="fas fa-map-marker-alt"></i>
+                          </a>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td>21</td>
+                        <td>878544125</td>
+                        <td>119</td>                     
+                        <td>220</td>
+                        <td><span class="badge badge-success">Atendido</span></td>
+                        <td>
+                            <a href="#" class="btn btn-primary btn-circle">
+                              <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                          </td>
+                      </tr>   
+                      <tr>
+                        <td>22</td>
+                        <td>878544125</td>
+                        <td>119</td>                     
+                        <td>220</td>
+                        <td><span class="badge badge-danger">No Atendido</span></td>
+                        <td>
+                            <a href="#" class="btn btn-primary btn-circle">
+                              <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                          </td>
+                      </tr> 
+                      <tr>
+                        <td>23</td>
+                        <td>878544125</td>
+                        <td>119</td>                     
+                        <td>220</td>
+                        <td><span class="badge badge-success">Atendido</span></td>
+                        <td>
+                            <a href="#" class="btn btn-primary btn-circle">
+                              <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                          </td>
+                      </tr>  
+                      <tr>
+                        <td>24</td>
+                        <td>878544125</td>
+                        <td>119</td>                     
+                        <td>220</td>
+                        <td><span class="badge badge-warning">En proceso</span></td>
+                        <td>
+                            <a href="#" class="btn btn-primary btn-circle">
+                              <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td>25</td>
+                        <td>878544125</td>
+                        <td>119</td>                     
+                        <td>220</td>
+                        <td><span class="badge badge-danger">No Atendido</span></td>
+                        <td>
+                          <a href="#" class="btn btn-primary btn-circle">
+                            <i class="fas fa-map-marker-alt"></i>
+                          </a>
+                          </td>
+                      </tr>                                                       
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <!-- <span>Copyright &copy; Your Website 2019</span> -->
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/datatables-demo.js"></script>
+
+</body>
+
+</html>
