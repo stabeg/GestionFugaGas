@@ -1,0 +1,42 @@
+#divMapMain{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.btn-marker {
+  position: absolute;
+  margin-left: 8px;
+  margin-top: 76px;
+  z-index: 1;
+}
+
+.btn-reporte {
+  position: absolute;
+  margin-left: 8px;
+  margin-top: 76px;
+  z-index: 1;
+}
+
+.btn-cuadrilla{
+  position: absolute;
+  margin-left: 8px;
+  margin-top: 112px;
+  z-index: 1;
+
+}
+
+.card {
+    height: 100%;
+}
+
+.panel-Ubicacion {
+  z-index: 1;
+    height: 100%;
+}
+
+.panel-Info{
+    z-index: 1;
+}
